@@ -1,0 +1,40 @@
+.navbar {
+    --bs-navbar-brand-color: var(--white-color);
+
+    background-color: var(--second-color);
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav {
+    column-gap: .5rem;
+
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: var(--bs-border-radius-lg);
+
+        &.active,
+        &.show {
+            color: var(--white-color);
+            background-color: var(--main-color);
+        }
+    }
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+        color: var(--main-color);
+    }
+}
+
+.nav-link {
+    color: var(--white-color);
+}
