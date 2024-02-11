@@ -1,0 +1,33 @@
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+router-outlet+* {
+    display: block;
+}
+
+router-outlet+*,
+router-outlet+*>*,
+router-outlet+*>* .container {
+    min-height: inherit;
+}

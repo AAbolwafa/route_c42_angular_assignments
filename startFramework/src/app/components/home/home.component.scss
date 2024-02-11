@@ -1,0 +1,9 @@
+@import "/src/assets/styles/page";
+
+.home {
+    background-color: var(--main-color);
+
+    .page-content {
+        color: var(--white-color);
+    }
+}

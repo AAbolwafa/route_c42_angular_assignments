@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,21 +13,22 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    AboutComponent,
-    PortfolioComponent,
-    ContactComponent,
-    HomeComponent,
-    NotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        AboutComponent,
+        PortfolioComponent,
+        ContactComponent,
+        HomeComponent,
+        NotFoundComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SharedModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
